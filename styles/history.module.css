@@ -1,0 +1,64 @@
+.history {
+  margin-top: 10rem;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.companies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.card {
+  width: 12rem;
+  height: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #eee;
+}
+
+.experience {
+  position: relative;
+}
+
+.imageContainer {
+  position: absolute;
+}
+
+.exp {
+  position: relative;
+  height: 170px;
+  z-index: 1;
+  left: 2.5rem;
+  display: flex;
+  align-items: center;
+  column-gap: 3rem;
+}
+
+.expNum {
+  color: #854fee;
+  font-family: 'Rubik', sans-serif;
+  font-size: 100px;
+  font-weight: 700;
+}
+
+.plusIcon {
+  font-size: 64px;
+  font-weight: 500;
+  vertical-align: bottom;
+}
+
+.expText {
+  color: #000;
+  font-family: 'Rubik', sans-serif;
+  font-size: 40px;
+  line-height: 120%;
+  font-weight: 500;
+}

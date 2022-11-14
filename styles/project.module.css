@@ -1,0 +1,52 @@
+.project {
+  margin-top: 10rem;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: var(--heading-font);
+  color: var(--heading-color);
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+
+.group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.card {
+  width: 30%;
+}
+
+.cardImage {
+  position: relative;
+  width: 100%;
+}
+
+.card:nth-child(even) .cardImage {
+  height: 400px;
+}
+
+.card:nth-child(odd) .cardImage {
+  height: 300px;
+}
+
+.cardTitle {
+  font-family: var(--heading-font);
+  color: var(--heading-color);
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-top: 1rem;
+  margin-bottom: 0px;
+}

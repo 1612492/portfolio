@@ -1,0 +1,61 @@
+.contact {
+  margin-top: 10rem;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  background: url('/contact-bg.webp') no-repeat center;
+  padding: 150px 0px;
+  text-align: center;
+}
+
+.title {
+  font-family: var(--heading-font);
+  color: #fff;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 50px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.desc {
+  color: #fff;
+}
+
+.form {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  column-gap: 1rem;
+}
+
+.input {
+  min-width: 380px;
+  max-width: 380px;
+  line-height: 48px;
+  padding: 0 25px;
+  border: 1px solid #ffffff;
+  background: transparent;
+  font-weight: 400;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+.input::placeholder {
+  color: #ffffff;
+}
+
+.button {
+  font-family: 'Rubik', sans-serif;
+  background: #ffffff;
+  text-transform: uppercase;
+  color: #222222;
+  border-radius: 5px;
+  line-height: 48px;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0px 38px;
+  cursor: pointer;
+}
