@@ -3,8 +3,7 @@
 }
 
 .container {
-  max-width: 1140px;
-  margin: 0 auto;
+  composes: container from './common.module.css';
   background: url('/contact-bg.webp') no-repeat center;
   padding: 150px 0px;
   text-align: center;

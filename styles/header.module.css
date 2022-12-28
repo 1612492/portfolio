@@ -9,8 +9,7 @@
 }
 
 .nav {
-  max-width: 1140px;
-  margin: 0 auto;
+  composes: container from './common.module.css';
   display: flex;
   justify-content: space-between;
   align-items: center;
