@@ -5,7 +5,6 @@ import About from 'components/about';
 import Banner from 'components/banner';
 import Header from 'components/header';
 import History from 'components/history';
-import Service from 'components/service';
 import Project from 'components/project';
 import Contact from 'components/contact';
 import Footer from 'components/footer';
@@ -23,7 +22,6 @@ const Home: NextPage = () => {
         <Banner />
         <About />
         <History />
-        <Service />
         <Project />
         <Contact />
       </main>

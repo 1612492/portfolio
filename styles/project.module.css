@@ -1,5 +1,6 @@
-.project {
-  margin-top: 10rem;
+.projects {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .container {
@@ -7,45 +8,70 @@
 }
 
 .title {
-  font-family: var(--heading-font);
-  color: var(--heading-color);
-  font-size: 36px;
-  font-weight: 700;
-  margin-bottom: 15px;
-  line-height: 50px;
+  font-size: var(--text-xl);
+  font-weight: var(--text-medium);
   text-transform: uppercase;
-}
-
-.group {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 2rem;
-  margin-top: 4rem;
+  text-align: center;
+  margin-bottom: 4rem;
 }
 
 .card {
-  width: 30%;
+  width: 100%;
+  margin-bottom: 2rem;
 }
 
 .cardImage {
   position: relative;
   width: 100%;
-}
-
-.card:nth-child(even) .cardImage {
-  height: 400px;
-}
-
-.card:nth-child(odd) .cardImage {
-  height: 300px;
+  padding-top: 100%;
+  border-radius: 6px;
+  overflow: hidden;
 }
 
 .cardTitle {
-  font-family: var(--heading-font);
-  color: var(--heading-color);
+  font-size: var(--text-lg);
   text-transform: uppercase;
-  font-size: 20px;
   margin-top: 1rem;
-  margin-bottom: 0px;
+  margin-bottom: 0.5rem;
+}
+
+.paragraph {
+  font-size: var(--text-sm);
+}
+
+@media (min-width: 768px) {
+  .cardGroup {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .card {
+    width: 45%;
+    margin-bottom: 4rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .projects {
+    padding-top: 10rem;
+  }
+
+  .title {
+    font-size: var(--text-2xl);
+  }
+
+  .cardTitle {
+    font-size: var(--text-xl);
+  }
+
+  .paragraph {
+    font-size: var(--text-base);
+  }
+}
+
+@media (min-width: 1200px) {
+  .card {
+    width: 22%;
+  }
 }

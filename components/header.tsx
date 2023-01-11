@@ -2,33 +2,39 @@ import Image from 'next/image';
 import { useState } from 'react';
 
 import styles from 'styles/header.module.css';
-import classnames from 'utils/classnames';
 
 const pages = [
   { href: '#home', name: 'Home' },
   { href: '#about', name: 'About' },
-  { href: '#services', name: 'Services' },
   { href: '#projects', name: 'Projects' },
   { href: '#contact', name: 'Contact' },
 ];
 
 function Header() {
+  const [openMenu, setOpenMenu] = useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
     <header className={styles.header}>
-      <nav className={styles.nav}>
+      <nav className={styles.container}>
         <Image src="/logo.png" alt="logo" width="48" height="48" />
 
-        <ul className={styles.menu}>
+        <button
+          onClick={() => setOpenMenu((prevState) => !prevState)}
+          className={openMenu ? styles.closeButton : styles.openButton}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul className={openMenu ? styles.openMenu : styles.closeMenu}>
           {pages.map(({ href, name }, index) => (
             <li key={index}>
               <a
                 href={href}
-                className={classnames(
-                  index === activeIndex ? styles.activeLink : styles.normalLink
-                )}
                 onClick={() => setActiveIndex(index)}
+                className={activeIndex === index ? styles.activeLink : styles.normalLink}
               >
                 {name}
               </a>

@@ -1,4 +1,60 @@
 .container {
-  max-width: 1140px;
-  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.button {
+  width: 12rem;
+  height: 3rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-weight: var(--text-medium);
+  font-size: var(--text-sm);
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+
+.solidButton {
+  composes: button;
+  color: var(--color-text-contrast);
+  background-image: linear-gradient(to right, #4458dc 0%, #854fee 100%),
+    radial-gradient(circle at top left, #4458dc, #854fee);
+  box-shadow: 0 10px 30px rgb(118 85 225 / 30%);
+}
+
+.outlinedButton {
+  composes: button;
+  color: var(--color-text);
+  background-image: linear-gradient(#fff, #fff),
+    radial-gradient(circle at top left, #4458dc, #854fee);
+  border: 2px solid transparent;
+  background-clip: content-box, border-box;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    margin: auto;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 992px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1400px;
+  }
 }

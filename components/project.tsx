@@ -3,23 +3,19 @@ import styles from 'styles/project.module.css';
 
 function Project() {
   return (
-    <section className={styles.project}>
+    <section id="projects" className={styles.projects}>
       <section className={styles.container}>
-        <h2 className={styles.title}>
-          QUALITY WORK
-          <br />
-          RECENTLY DONE PROJECT
-        </h2>
-        <section className={styles.group}>
-          {Array(6)
+        <h2 className={styles.title}>Projects</h2>
+        <section className={styles.cardGroup}>
+          {Array(8)
             .fill(0)
             .map((_, index) => (
               <article key={index} className={styles.card}>
                 <section className={styles.cardImage}>
-                  <Image src="/project.webp" alt="placeholder" layout="fill" objectFit="cover" />
+                  <Image src="/project.jpeg" alt="project" layout="fill" objectFit="cover" />
                 </section>
                 <h5 className={styles.cardTitle}>MinimaL Design</h5>
-                <p>Animated, portfolio</p>
+                <p className={styles.paragraph}>Animated, portfolio</p>
               </article>
             ))}
         </section>

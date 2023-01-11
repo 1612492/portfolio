@@ -1,65 +1,52 @@
 :root {
-  --heading-font: 'Rubik', sans-serif;
-  --content-font: 'Roboto', sans-serif;
-  --text-xs: 0.75rem;
-  --text-sm: 0.875rem;
-  --text-base: 1rem;
-  --text-lg: 1.125rem;
-  --text-xl: 1.25rem;
-  --text-2xl: 1.5rem;
-  --text-3xl: 1.875rem;
-  --text-4xl: 2.25rem;
-  --text-5xl: 3rem;
-  --text-6xl: 3.75rem;
-  --text-7xl: 4.5rem;
-  --text-8xl: 6rem;
-  --text-9xl: 8rem;
+  --color-primary: #4458dc;
+  --color-secondary: #854fee;
+  --color-background: #fff;
+  --color-background-secondary: #000;
+  --color-text: #1f2937;
+  --color-text-contrast: #fff;
+  --color-border: #eee;
+  --color-box-shadow: rgba(156, 163, 175, 0.1);
 
-  --primary-color: #4458dc;
-  --content-color: #777777;
-  --heading-color: #000000;
-  --header-color: #ffffff;
-  --card-color: #f9f9fd;
+  --font-body: 'Rubik', sans-serif;
+
+  --text-sm: 14px;
+  --text-base: 16px;
+  --text-lg: 18px;
+  --text-xl: 24px;
+  --text-2xl: 36px;
+  --text-3xl: 40px;
+  --text-4xl: 70px;
+  --text-5xl: 100px;
+
+  --text-medium: 500;
+  --text-bold: 700;
+  --text-black: 900;
 }
 
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 6rem;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-a {
-  text-decoration: none;
-}
-
+ol,
 ul {
   list-style: none;
 }
 
-html,
-body,
-button,
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-  padding: 0;
-}
-
-button {
-  outline: none;
-  border: none;
-  cursor: pointer;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  line-height: 26px;
-  font-size: 15px;
-  font-family: var(--content-font);
-  font-weight: 400;
-  color: #777;
   background: url('/body-bg.png') no-repeat center;
+}
+
+body,
+button,
+textarea,
+input {
+  font-family: var(--font-body);
+  color: var(--color-text);
 }

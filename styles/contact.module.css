@@ -1,60 +1,73 @@
 .contact {
-  margin-top: 10rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .container {
   composes: container from './common.module.css';
-  background: url('/contact-bg.webp') no-repeat center;
-  padding: 150px 0px;
-  text-align: center;
+  background: url('/contact-bg.webp') no-repeat;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .title {
-  font-family: var(--heading-font);
-  color: #fff;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 50px;
+  color: var(--color-text-contrast);
+  font-size: var(--text-xl);
+  font-weight: var(--text-bold);
   text-transform: uppercase;
-  margin-bottom: 1rem;
-}
-
-.desc {
-  color: #fff;
-}
-
-.form {
-  margin-top: 3rem;
-  display: flex;
-  justify-content: center;
-  column-gap: 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .input {
-  min-width: 380px;
-  max-width: 380px;
-  line-height: 48px;
-  padding: 0 25px;
-  border: 1px solid #ffffff;
-  background: transparent;
-  font-weight: 400;
-  border-radius: 5px;
-  color: #ffffff;
+  width: 100%;
+  line-height: 1.5;
+  padding: 1rem;
+  border: 1px solid var(--color-border);
+  background: none;
+  border-radius: 4px;
+  color: var(--color-text-contrast);
+  margin-bottom: 2rem;
 }
 
 .input::placeholder {
-  color: #ffffff;
+  color: var(--color-text-contrast);
 }
 
 .button {
-  font-family: 'Rubik', sans-serif;
-  background: #ffffff;
-  text-transform: uppercase;
-  color: #222222;
-  border-radius: 5px;
-  line-height: 48px;
-  font-size: 14px;
-  font-weight: 500;
-  padding: 0px 38px;
-  cursor: pointer;
+  composes: outlinedButton from './common.module.css';
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .contact {
+    padding-top: 10rem;
+    padding-bottom: 4rem;
+  }
+
+  .title {
+    font-size: var(--text-2xl);
+  }
+
+  .form {
+    text-align: center;
+  }
+
+  .input {
+    width: 40rem;
+  }
+
+  .button {
+    display: block;
+    width: 12rem;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    background-size: 100%;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
 }

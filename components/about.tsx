@@ -2,37 +2,51 @@ import Image from 'next/image';
 
 import styles from 'styles/about.module.css';
 
+const technologies = [
+  'HTML, CSS, Javascript',
+  'React, React Native, NextJS, Gatsby, Typescript, Redux',
+  'Webpack, Rollup, Esbuild, Vite, Babel',
+  'BEM, SASS, CSS Module, Bootstrap, TailwindCSS, CSS in JS',
+  'Jest, React Testing Library, Storybook',
+  'Google Tag Manager, Facebook Pixel, Strapi',
+  'NodeJS, MongoDB, MySQL, PostgreSQL',
+  'Git, Docker, Vim, AWS (S3, EC2)',
+  'Web3 technologies (Ethereum, Cardano, Solana)',
+];
+
 function About() {
   return (
     <section id="about" className={styles.about}>
       <section className={styles.container}>
         <section className={styles.illustration}>
-          <section className={styles.imageContainer}>
-            <Image
-              src="/about-illustration.png"
-              alt="illustration"
-              layout="fixed"
-              width="687"
-              height="631"
-            />
-          </section>
+          <Image
+            src="/about-illustration.png"
+            alt="illustration"
+            layout="fill"
+            objectFit="contain"
+          />
         </section>
-        <section className={styles.intro}>
-          <h2 className={styles.title}>
-            Let&apos;s
-            <br /> introduce about
-            <br /> myself
-          </h2>
-          <p className={styles.paragraph}>
-            Whose given. Were gathered. There first subdue greater. Bearing you Whales heaven midst
-            their. Beast creepeth. Fish days.
-          </p>
-          <p className={styles.paragraph}>
-            Is give may shall likeness made yielding spirit a itself together created after sea is
-            in beast beginning signs open god you&apos;re gathering whose gathered cattle let.
-            Creature whales fruit unto meat the life beginning all in under give two.
-          </p>
-          <button className={styles.button}>Download CV</button>
+        <section className={styles.content}>
+          <h2 className={styles.title}>About me</h2>
+          <section className={styles.paragraph}>
+            I am a skilled and qualified front-end developer with three years of experience. Because
+            of my curiosity and love of technology, I am also knowledgeable about back-end and
+            blockchain technology.
+            <br />I use the following technologies:
+            <ul>
+              {technologies.map((content, index) => (
+                <li key={index}>
+                  <i className={styles.icon}>⇨</i>
+                  <span>{content}</span>
+                </li>
+              ))}
+            </ul>
+            I will advise you on the quickest, easiest, and most valuable options so that you can
+            devote your time to more important issues.
+            <br />
+            Please contact me if you have any questions about the project.
+          </section>
+          <button className={styles.solidButton}>Download CV</button>
         </section>
       </section>
     </section>

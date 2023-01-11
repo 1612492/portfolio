@@ -1,6 +1,6 @@
 .footer {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .container {
@@ -9,21 +9,19 @@
 }
 
 .title {
-  font-family: 'Rubik', sans-serif;
-  font-size: 20px;
-  font-weight: 500;
-  color: #000000;
+  font-size: var(--text-lg);
+  font-weight: var(--text-medium);
   margin-top: 1rem;
   text-transform: uppercase;
 }
 
 .group {
   display: flex;
-  column-gap: 1rem;
   justify-content: center;
-  margin-top: 2rem;
+  column-gap: 1rem;
+  margin-top: 1.5rem;
 }
 
 .copyright {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
